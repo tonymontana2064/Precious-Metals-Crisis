@@ -276,6 +276,53 @@
             font-weight: bold;
         }
         
+        /* Currency Hierarchy */
+        .hierarchy-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hierarchy-level {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        .level-1 {
+            background: linear-gradient(135deg, #f5e6b8, #e8d18e);
+            border-left: 6px solid #c9a347;
+        }
+        
+        .level-2 {
+            background: linear-gradient(135deg, #e8e8e8, #d4d4d4);
+            border-left: 6px solid #8b6914;
+            margin-left: 2rem;
+        }
+        
+        .level-3 {
+            background: linear-gradient(135deg, #d9e4f5, #b8cce4);
+            border-left: 6px solid #2c5aa0;
+            margin-left: 4rem;
+        }
+        
+        .hierarchy-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            width: 60px;
+            text-align: center;
+        }
+        
+        .hierarchy-content h4 {
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+        
         /* Footer */
         .blog-footer {
             background-color: #1a1a1a;
@@ -345,6 +392,10 @@
             
             .charts-container {
                 grid-template-columns: 1fr;
+            }
+            
+            .hierarchy-level {
+                margin-left: 0 !important;
             }
         }
     </style>
@@ -503,6 +554,101 @@
             </section>
 
             <section class="article-section">
+                <h2 class="section-title">The De-Dollarization Wave</h2>
+                
+                <p>It's not just central banks. Entire countries are moving away from the dollar for international trade.</p>
+                
+                <p>The BRICS nations have increased their local currency trade from <span class="data-point">35%</span> to <span class="data-point">50%</span>. Brazil and China now conduct <span class="data-point">40%</span> of their bilateral trade in local currencies, up 10 percentage points. ASEAN countries are planning a regional unified payment system by <span class="data-point">2027</span> specifically to reduce dollar dependence.</p>
+                
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <div class="chart-title">BRICS Local Currency Trade</div>
+                        <div class="chart-container">
+                            <canvas id="bricsChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <div class="chart-title">Brazil-China Local Currency Trade</div>
+                        <div class="chart-container">
+                            <canvas id="brazilChinaChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>This isn't some conspiracy theory. This is official policy. Countries watched what happened when the US froze Russia's dollar-denominated assets in 2022 and realized that holding all their eggs in the dollar basket was risky. If political winds change, their reserves could be confiscated or sanctioned. So they're diversifying.</p>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">CRITICAL ANALYSIS:</div>
+                    "It is no longer just the debasement trade, you're also getting the geopolitical flight to safety premium that up until recently, US Treasuries would have been the dominant player." - James McMillan
+                </div>
+                
+                <p>Read that again. US Treasuries used to be THE safe haven. Now? Gold is taking that crown. The loss of safe haven status is massive. It means that when crisis hits, people and institutions are no longer running to dollars. They're running to gold.</p>
+            </section>
+
+            <section class="article-section">
+                <h2 class="section-title">The Currency Paradox That Confused Me</h2>
+                
+                <p>But here's where I got stuck for a while, and maybe you're wondering the same thing.</p>
+                
+                <p>If the dollar is so weak against gold and silver, why is the Indian rupee still falling against the dollar? The rupee hit an all-time low of <span class="data-point">92</span> to the dollar in late January. It's been Asia's worst-performing currency, falling nearly <span class="data-point">5.5%</span> despite the dollar's overall weakness.</p>
+                
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <div class="chart-title">Indian Rupee vs USD (2025-2026)</div>
+                        <div class="chart-container">
+                            <canvas id="rupeeChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <div class="chart-title">India's Economic Indicators</div>
+                        <div class="chart-container">
+                            <canvas id="indiaChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>This seems contradictory, right? How can the dollar be weak and strong at the same time?</p>
+                
+                <p>The answer is: it's all relative. Think of currencies like a hierarchy, a ladder if you will.</p>
+                
+                <div class="hierarchy-container">
+                    <h3 class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">The Currency Hierarchy</h3>
+                    
+                    <div class="hierarchy-level level-1">
+                        <div class="hierarchy-icon">🥇</div>
+                        <div class="hierarchy-content">
+                            <h4>Level 1: Hard Assets</h4>
+                            <p>Gold, Silver - Tangible, finite, can't be printed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hierarchy-level level-2">
+                        <div class="hierarchy-icon">🏦</div>
+                        <div class="hierarchy-content">
+                            <h4>Level 2: Major Reserve Currencies</h4>
+                            <p>US Dollar, Euro, Pound, Swiss Franc - Relatively stable and liquid</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hierarchy-level level-3">
+                        <div class="hierarchy-icon">🌍</div>
+                        <div class="hierarchy-content">
+                            <h4>Level 3: Emerging Market Currencies</h4>
+                            <p>Indian Rupee, Turkish Lira, Brazilian Real - More volatile and dependent on domestic economies</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>When there's a crisis of confidence in fiat money generally, capital flows UP this ladder. Gold and silver beat all currencies. The euro and Swiss franc beat the dollar. The dollar still beats the rupee.</p>
+                
+                <p>The rupee is falling against the dollar because India has its own problems. They run a massive trade deficit, importing far more than they export, especially crude oil. Foreign investors pulled <span class="data-point">$18.5 billion</span> out of Indian equities. Trump slapped <span class="data-point">50%</span> tariffs on Indian exports in January before reducing them to <span class="data-point">18%</span> on the 28th. India's inflation runs at <span class="data-point">4.5%</span>, higher than the US. All of this creates constant demand for dollars to pay for imports, which weakens the rupee.</p>
+                
+                <p>So both things can be true simultaneously. The dollar is falling against hard assets and some major currencies, but it's still stronger than weaker emerging market currencies that have their own structural issues.</p>
+            </section>
+
+            <section class="article-section">
                 <h2 class="section-title">What Actually Happened in the Last Week of January</h2>
                 
                 <p>Let me walk you through the timeline because it was absolute chaos.</p>
@@ -536,7 +682,21 @@
                     </div>
                 </div>
                 
-                <p>Even after the crash, gold is still trading around <span class="data-point">$4,920</span> as of February 3. Silver is around <span class="data-point">$85</span>. These are still dramatically higher than they were a year ago. Gold is up <span class="data-point">73%</span> year-over-year. Silver is up over <span class="data-point">100%</span>. The crash didn't erase the fundamental trend. It just wiped out the speculative excess.</p>
+                <p>Gold had been climbing steadily. By January 26, it crossed <span class="data-point">$5,100</span> per ounce. On January 29, it peaked somewhere near <span class="data-point">$5,596</span> depending on which source you check. Some reported it slightly lower at <span class="data-point">$5,520</span>, but either way, it was an all-time high.</p>
+                
+                <p>Silver was even more dramatic. It opened 2026 near <span class="data-point">$70</span> per ounce. Throughout January it surged higher and higher. On the morning of January 29, silver hit an all-time high of <span class="data-point">$121.67</span>. People were calling it the silver squeeze, the biggest rally in decades.</p>
+                
+                <p>And then, on January 30, everything changed.</p>
+                
+                <p>President Trump announced his nomination of Kevin Warsh as the next Federal Reserve Chair. The market immediately interpreted this as hawkish. Warsh has a reputation for favoring higher interest rates and tighter monetary policy. The announcement triggered a panic.</p>
+                
+                <p>Within 30 hours, silver crashed from <span class="data-point">$121</span> to below <span class="data-point">$75</span>. That's over <span class="data-point">30%</span> in barely more than a day. Gold fell from near <span class="data-point">$5,600</span> to around <span class="data-point">$4,700</span>, a drop of about <span class="data-point">15%</span>. The DXY, which had been falling, briefly rallied about <span class="data-point">0.7 to 1 percent</span> as renewed confidence in hawkish Fed policy temporarily strengthened the dollar.</p>
+                
+                <p>What caused the crash? Leveraged positions unwinding. Chinese speculators who had piled into silver on margin got wiped out and had to sell everything. Western ETF holders took profits. Anyone who was long on precious metals with borrowed money got liquidated.</p>
+                
+                <p>It was a bloodbath.</p>
+                
+                <p>But here's the interesting part. Even after the crash, gold is still trading around <span class="data-point">$4,920</span> as of February 3. Silver is around <span class="data-point">$85</span>. These are still dramatically higher than they were a year ago. Gold is up <span class="data-point">73%</span> year-over-year. Silver is up over <span class="data-point">100%</span>. The crash didn't erase the fundamental trend. It just wiped out the speculative excess.</p>
             </section>
 
             <section class="article-section">
@@ -562,14 +722,61 @@
                 
                 <p>As of April 2025, the daily turnover in the forex market was <span class="data-point">$9.6 trillion</span>. Not per year. Per day. To put that in perspective, that's what the entire US GDP produces in about four to five months, happening every single day. Annualized, the forex market is about <span class="data-point">$3.5 quadrillion</span>, roughly 2.5 times the size of global GDP.</p>
                 
+                <p>And here's what most people don't realize: it's a zero-sum game. For every dollar someone gains, someone else loses a dollar. It's not like the stock market where value can be created. Forex is pure transfer of wealth from one participant to another.</p>
+                
                 <p>During the last week of January, volumes probably spiked by <span class="data-point">50 to 100%</span> above normal. Instead of $9.6 trillion per day, we likely saw <span class="data-point">$12 to $20 trillion</span> on the peak volatility days, especially January 30 when the crash happened. That's massive amounts of money changing hands in panic.</p>
+                
+                <p>The forex market operates through different types of transactions. Spot transactions, where you exchange currencies within two business days, make up about <span class="data-point">31%</span> of the volume, around <span class="data-point">$2.96 trillion</span> daily. Currency swaps, where you agree to exchange currencies now and reverse it at a future date, make up the largest chunk at <span class="data-point">41%</span>, about <span class="data-point">$3.94 trillion</span> daily. The rest is forwards, options, and other derivatives.</p>
+                
+                <p>Why does this matter? Because the forex market is where currencies influence each other through interest rate differentials, trade balances, capital flows, safe-haven dynamics, and central bank interventions. When the Fed cuts rates while the ECB holds steady, money flows to the euro. When India runs trade deficits, constant dollar demand weakens the rupee. When geopolitical tensions rise, money flows to Swiss francs and gold.</p>
+                
+                <p>Everything is connected. And right now, all the signals are pointing in one direction: away from the dollar.</p>
+            </section>
+
+            <section class="article-section">
+                <h2 class="section-title">Historical Parallels: We've Seen This Movie Before</h2>
+                
+                <p>As I dug deeper into the research, I kept noticing a pattern. This has all happened before, in different forms.</p>
+                
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <div class="chart-title">Historical Crises Timeline</div>
+                        <div class="chart-container">
+                            <canvas id="historicalChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <div class="chart-title">Fiat Currency Lifespan</div>
+                        <div class="chart-container">
+                            <canvas id="lifespanChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <p><strong>The 1929 Great Depression</strong> happened partly because the gold standard was too rigid. Countries couldn't expand their money supply to fight the economic downturn because they were tied to gold. Central banks were constrained. The economy spiraled downward. It wasn't until countries started abandoning the gold standard in the 1930s that recovery could begin.</p>
+                
+                <p><strong>In 1971</strong>, Nixon ended gold convertibility because the US couldn't maintain it while funding the Vietnam War. The dollar was devalued. Gold, which had been fixed at $35 per ounce, eventually surged to $850 by 1980. People lost confidence in the dollar's soundness.</p>
+                
+                <p><strong>In 2008</strong>, we had the subprime mortgage crisis. Banks had given out massive loans to people who couldn't afford them, bundled those loans into securities, and "insured" them with credit default swaps. When borrowers started defaulting, the whole house of cards collapsed. Lehman Brothers went bankrupt. The global financial system nearly froze. Governments had to bail out banks with printed money.</p>
+                
+                <p>And here's the kicker: <strong>Bitcoin was created in 2008-2009</strong> as a direct response to that crisis. The genesis block of Bitcoin contains the text: "Chancellor on brink of second bailout for banks." It was a protest against government money printing and a declaration that there had to be a better way.</p>
+                
+                <p>Every single one of these crises followed the same pattern. A monetary system fails or becomes stressed. Crisis hits. Governments and central banks intervene. A new system emerges or the old system is fundamentally altered.</p>
+                
+                <p>We're in the middle of that cycle right now. The pure fiat currency system that began in 1971 is showing cracks. The solution to the 2008 crisis was to print massive amounts of money through quantitative easing. But that money printing is now the problem in 2026. You can't solve a debt crisis with more debt. You can't solve a currency debasement problem by printing more currency.</p>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">HISTORICAL CONTEXT:</div>
+                    The average lifespan of a fiat currency throughout history is about 27 years. The current dollar-based system, dating from Nixon's 1971 decision to end gold convertibility, is 55 years old. We're already double the average lifespan. This doesn't mean the dollar will fail tomorrow, but it suggests we're in unprecedented territory.
+                </div>
             </section>
 
             <section class="article-section">
                 <h2 class="section-title">What This Means for Regular People</h2>
                 
                 <div class="highlight-box">
-                    <div class="highlight-title">KEY TAKEAWAYS:</div>
+                    <div class="highlight-title">KEY TAKEAWAYS FOR REGULAR PEOPLE:</div>
                     <ul>
                         <li>Your savings are being quietly eroded</li>
                         <li>Imported goods are getting more expensive</li>
@@ -577,6 +784,14 @@
                         <li>Traditional 60/40 portfolios may not protect against fiat currency crisis</li>
                     </ul>
                 </div>
+                
+                <p>So what does all of this actually mean for you and me, for regular people trying to live their lives?</p>
+                
+                <p>It means your savings are being quietly eroded. Every dollar in your bank account can buy less real value than it could a year ago. If you're holding cash or bonds, you're losing purchasing power. The stated inflation rate might say 3 or 4%, but when you measure against hard assets like gold, the real debasement is much higher.</p>
+                
+                <p>It means imported goods are getting more expensive. As the dollar weakens, everything we import costs more. Gas prices, electronics, clothing, food, all of it.</p>
+                
+                <p>It means your retirement accounts might not be worth what you think. Traditional 60/40 portfolios of stocks and bonds were designed for a different era. In a fiat currency crisis, both can lose real value simultaneously.</p>
                 
                 <p>But it also means there are ways to protect yourself if you understand what's happening.</p>
             </section>
@@ -596,6 +811,59 @@
                         <li><strong>Maintain flexibility</strong> - Adapt as the monetary system transitions</li>
                     </ol>
                 </div>
+                
+                <p>First, diversify beyond just dollars. Consider holding some portion of your savings in hard assets. Financial experts often recommend <span class="data-point">5 to 15%</span> of your portfolio in physical precious metals, actual gold and silver you can hold, not just paper claims. This isn't about getting rich quick. This is insurance against currency debasement.</p>
+                
+                <p>Second, don't panic. The January volatility showed what happens when people panic and use leverage. Silver crashed 30% in 30 hours because leveraged speculators got wiped out. If you're going to own precious metals, own them outright with money you can afford to set aside for the long term. Don't borrow to buy them.</p>
+                
+                <p>Third, focus on real skills and human capital. In any economic system, people with valuable skills do better than those without. Learn things that transcend currency fluctuations. Build businesses that create real value. Develop international income streams if you can.</p>
+                
+                <p>Fourth, pay attention to what the smart money is doing. Central banks are buying gold. Institutions are diversifying out of dollars. De-dollarization is accelerating. These aren't random moves. Follow the trend, but don't chase it.</p>
+                
+                <p>Fifth, maintain flexibility. We're in a period of transition. The old monetary system is stressed, but the new one hasn't fully emerged yet. The ability to adapt as things change is crucial. Don't go all-in on any single strategy.</p>
+            </section>
+
+            <section class="article-section">
+                <h2 class="section-title">The Bigger Question: What Comes Next?</h2>
+                
+                <p>This is the part that keeps me up at night. Not the volatility in gold and silver prices. Not even the declining dollar. But the fundamental question of what comes after this system.</p>
+                
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <div class="chart-title">Possible Future Scenarios</div>
+                        <div class="chart-container">
+                            <canvas id="scenariosChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Some possibilities for what comes next:</p>
+                
+                <p><strong>1. Multi-currency reserve system</strong> - The dollar, euro, yuan, and others all share reserve status, with no single dominant currency. This is actually already happening with de-dollarization.</p>
+                
+                <p><strong>2. Partial commodity backing</strong> - A return to some form of commodity backing for currencies, not a full gold standard but perhaps gold as part of a basket of assets backing currency values.</p>
+                
+                <p><strong>3. Digital currency revolution</strong> - The rise of digital currencies, both government CBDCs and decentralized cryptocurrencies, as alternatives to traditional fiat. Bitcoin and other cryptos were created for exactly this moment.</p>
+                
+                <p><strong>4. New Bretton Woods agreement</strong> - A new international agreement where countries get together and reset the monetary system with new rules and new arrangements.</p>
+                
+                <p><strong>5. Muddling through</strong> - Continue with increasing volatility, gradual dollar decline, and periodic crises until something forces a change.</p>
+                
+                <p>I don't know which scenario will play out. Nobody does. But I do know that the January 2026 events were a warning sign. The system is under stress. The shadow on the wall is becoming harder to ignore.</p>
+            </section>
+
+            <section class="article-section">
+                <h2 class="section-title">The Power of Belief</h2>
+                
+                <p>Let me come back to that quote I started with. "Power resides where men believe it resides. It's a trick. A shadow on the wall."</p>
+                
+                <p>Money is the ultimate example of collective belief. A dollar bill is just paper. It has value only because we all agree it has value. The entire monetary system is based on faith, on the belief that tomorrow your dollars will still buy roughly what they buy today, that the government won't print so many that they become worthless, that the system will continue.</p>
+                
+                <p>Gold and silver are different. They're scarce, they're tangible, they can't be printed. But even they have value partly because of collective agreement. The difference is that this agreement is much harder to change. People have valued gold for thousands of years across every civilization.</p>
+                
+                <p>When belief in fiat currency starts to waver, when people start seeing the shadow for what it is, that's when real change happens. And right now, that belief is wavering. Central banks selling dollars and buying gold. Countries moving away from dollar-denominated trade. Individuals fleeing to hard assets.</p>
+                
+                <p>The question isn't whether the shadow will become visible to everyone. It's when, and how chaotic the transition will be.</p>
             </section>
 
             <section class="article-section">
@@ -637,6 +905,8 @@
                     <li>Forex daily turnover: $9.6 trillion (normal) → $12-20T (volatility spike)</li>
                     <li>Indian rupee: 92 to dollar (all-time low)</li>
                     <li>BRICS local currency trade: 35% → 50%</li>
+                    <li>India: $18.5B foreign capital outflow</li>
+                    <li>India inflation: 4.5% (higher than US)</li>
                 </ul>
             </div>
             
@@ -660,6 +930,15 @@
                     <li>Rise of digital currencies (CBDCs, crypto)</li>
                     <li>New Bretton Woods-style agreement</li>
                     <li>Continued volatility and gradual decline</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Critical Quotes</h3>
+                <ul class="key-points">
+                    <li>"80% of all dollars printed since Covid" - Ben McMillan</li>
+                    <li>"Geopolitical flight to safety premium" - James McMillan</li>
+                    <li>"Power resides where men believe it resides" - Opening quote</li>
                 </ul>
             </div>
         </aside>
@@ -686,7 +965,7 @@
         </div>
         
         <div class="container disclaimer">
-            <p><strong>Disclaimer:</strong> The content in this article is for informational purposes only and should not be considered financial advice. Always conduct your own research before making investment decisions.</p>
+            <p><strong>Disclaimer:</strong> The content in this article is for informational purposes only and should not be considered financial advice. All investments carry risk, and past performance is not indicative of future results.</p>
         </div>
     </footer>
 
@@ -926,6 +1205,142 @@
                 }
             });
             
+            // BRICS Chart
+            const bricsCtx = document.getElementById('bricsChart').getContext('2d');
+            new Chart(bricsCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2020', '2022', '2024', '2025', '2026'],
+                    datasets: [{
+                        label: 'BRICS Local Currency Trade (%)',
+                        data: [25, 30, 35, 45, 50],
+                        borderColor: '#2c5aa0',
+                        backgroundColor: 'rgba(44, 90, 160, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 20,
+                            max: 55,
+                            title: {
+                                display: true,
+                                text: 'Percentage (%)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Brazil-China Chart
+            const brazilChinaCtx = document.getElementById('brazilChinaChart').getContext('2d');
+            new Chart(brazilChinaCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['2022', '2023', '2024', '2025', '2026'],
+                    datasets: [{
+                        label: 'Brazil-China Local Currency Trade (%)',
+                        data: [20, 25, 30, 35, 40],
+                        backgroundColor: 'rgba(76, 175, 80, 0.7)',
+                        borderColor: '#4caf50',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 15,
+                            max: 45,
+                            title: {
+                                display: true,
+                                text: 'Percentage (%)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Rupee Chart
+            const rupeeCtx = document.getElementById('rupeeChart').getContext('2d');
+            new Chart(rupeeCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan 2025', 'Apr 2025', 'Jul 2025', 'Oct 2025', 'Jan 2026'],
+                    datasets: [{
+                        label: 'Indian Rupee to USD',
+                        data: [82, 85, 87, 90, 92],
+                        borderColor: '#ff5722',
+                        backgroundColor: 'rgba(255, 87, 34, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 80,
+                            max: 95,
+                            title: {
+                                display: true,
+                                text: 'Rupees per USD'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // India Chart
+            const indiaCtx = document.getElementById('indiaChart').getContext('2d');
+            new Chart(indiaCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Trade Deficit', 'Capital Outflow', 'Inflation', 'Tariffs'],
+                    datasets: [{
+                        label: 'India Economic Indicators',
+                        data: [-25, -18.5, 4.5, 50],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(255, 206, 86, 0.7)',
+                            'rgba(75, 192, 192, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(54, 162, 235)',
+                            'rgb(255, 206, 86)',
+                            'rgb(75, 192, 192)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: 'Value'
+                            }
+                        }
+                    }
+                }
+            });
+            
             // Forex Chart
             const forexCtx = document.getElementById('forexChart').getContext('2d');
             new Chart(forexCtx, {
@@ -1000,8 +1415,118 @@
                     }
                 }
             });
+            
+            // Historical Chart
+            const historicalCtx = document.getElementById('historicalChart').getContext('2d');
+            new Chart(historicalCtx, {
+                type: 'line',
+                data: {
+                    labels: ['1929', '1971', '2008', '2020', '2026'],
+                    datasets: [{
+                        label: 'Gold Price ($)',
+                        data: [20.67, 35, 850, 1800, 5596],
+                        borderColor: '#c9a347',
+                        backgroundColor: 'rgba(201, 163, 71, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            type: 'logarithmic',
+                            title: {
+                                display: true,
+                                text: 'Gold Price ($) - Log Scale'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Lifespan Chart
+            const lifespanCtx = document.getElementById('lifespanChart').getContext('2d');
+            new Chart(lifespanCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Average Fiat Currency', 'Current Dollar System'],
+                    datasets: [{
+                        label: 'Lifespan (Years)',
+                        data: [27, 55],
+                        backgroundColor: [
+                            'rgba(100, 100, 100, 0.7)',
+                            'rgba(201, 163, 71, 0.7)'
+                        ],
+                        borderColor: [
+                            '#646464',
+                            '#c9a347'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Years'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Scenarios Chart
+            const scenariosCtx = document.getElementById('scenariosChart').getContext('2d');
+            new Chart(scenariosCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Likelihood', 'Stability', 'Transition Ease', 'Global Acceptance', 'Longevity'],
+                    datasets: [
+                        {
+                            label: 'Multi-Currency System',
+                            data: [85, 70, 60, 75, 65],
+                            borderColor: '#2c5aa0',
+                            backgroundColor: 'rgba(44, 90, 160, 0.2)',
+                            pointBackgroundColor: '#2c5aa0'
+                        },
+                        {
+                            label: 'Digital Currency Revolution',
+                            data: [65, 55, 40, 50, 50],
+                            borderColor: '#4caf50',
+                            backgroundColor: 'rgba(76, 175, 80, 0.2)',
+                            pointBackgroundColor: '#4caf50'
+                        },
+                        {
+                            label: 'Partial Gold Backing',
+                            data: [45, 80, 30, 60, 75],
+                            borderColor: '#c9a347',
+                            backgroundColor: 'rgba(201, 163, 71, 0.2)',
+                            pointBackgroundColor: '#c9a347'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 100
+                        }
+                    }
+                }
+            });
         });
     </script>
 </body>
 </html>
-
